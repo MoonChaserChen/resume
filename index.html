@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/circle.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/hint.css/2.5.0/hint.base.min.css">
+</head>
+<body>
+<!--<div class='stop-watch'>
+ 已跟公司表明离职意向，为做好交接工作，需要一定的时间才会进行正式离职。
+</div>-->
+<p class='attention public'>已跟公司表明离职意向，为做好交接工作，需要一定的时间才会进行正式离职。<br/>期望入职时间：2020年初</p>
+<p class='attention private'>期望入职时间：2020年初</p>
+<header>
+    个人简历
+    <small>Pursuit of excellence, <br>despite of the result.</small>
+    <!--<span class='print' onclick='print();'></span>
+    <a href='./resume.pdf' class='pdf'></a>-->
+</header>
+<div class='line'><img src='image/resume-title-line.svg'></div>
+<div class='resume'>
+    <h2 class="title"><span>基本信息</span></h2>
+    <section id='user-info'>
+    </section>
+    <script id="template-user-info" type="x-tmpl-mustache">
+        <table>
+          {{#name}}
+            <tr>
+              <td>名字</td>
+              <td style='width: 230px;'>{{name}}</td>
+              <td>性别</td>
+              <td>{{sex}}</td>
+            </tr>
+            <tr>
+              <td>出生年月</td>
+              <td>{{age}}</td>
+              <td>专业</td>
+              <td>{{major}}</td>
+            </tr>
+          {{/name}}
+
+          {{^name}}
+            <tr>
+              <td>姓名</td>
+              <td style='width: 218px;'>陈厚璋</td>
+              <td style='width: 87px;'>民族&性别</td>
+              <td>汉（子）</td>
+            </tr>
+          {{/name}}
+          <tr>
+            <td>毕业院校</td>
+            <td>四川大学</td>
+            <td>学历</td>
+            <td>本科</td>
+          </tr>
+          <tr>
+            <td>籍贯</td>
+            <td>四川达州</td>
+            <td>出生年月</td>
+            <td>1993.03</td>
+          </tr>
+          <tr>
+            <td>Tel.</td>
+            <td>15313179147</td>
+            <td>Email</td>
+            <td><a href="mailto:moon_chaser@163.com">moon_chaser@163.com</a></td>
+          </tr>
+        </table>
+
+    </script>
+    <h2 class="title"><span><a href="timeline.html">工作经历</a></span></h2>
+    <section class='projects'>
+        <p class='project-title'>
+            <span class='time'>2017-09 ~ 至今 </span>
+            <span class='job'>资深前端开发工程师</span>
+            <span class='company'>阿里巴巴(中国)网络技术有限公司</span>
+        </p>
+        <ul>
+            <li>暂无</li>
+        </ul>
+        <p class='project-title'>
+            <span class='time'>2017-05 ~ 2017-08 </span>
+            <span class='job'>前端工程师</span>
+            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+        </p>
+        <ul>
+            <li>负责制定 Web 前端框架标准。根据兼容性的不同，分别采用 Riot 和 CustomElement V0 搭建前端框架。</li>
+            <li>采用 Riot 组件化标准，使得原有项目迁移成本减至最低，并提高了项目可维护性。</li>
+        </ul>
+        <p class='project-title'>
+            <span class='time'>2017-01 ~ 2017-04 </span>
+            <span class='job'>前端工程师</span>
+            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+        </p>
+        <ul>
+            <li>率先在运营后台接口采用 GraphQL + Koa + Sequelize 技术栈，实现用户权限与认证模块相关功能，使得前端接口调用更为灵活，接口对接效率大大提升。</li>
+        </ul>
+
+        <p class='project-title'>
+            <span class='time'>2016-01 ~ 2016-12</span>
+            <span class='job'>前端工程师</span>
+            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+        </p>
+        <ul>
+            <li>提出采用 Micro Services 的业务架构，将独立并可通用的业务模块封装成微服务，使业务之间耦合度降低，提高了项目的可维护性。</li>
+            <li>提出采用 Git Push + Auto Build + Docker 的部署方案，先于后端在阿里云上进行 Docker 部署，使得运维工作大大简化，极大提高了部署效率。</li>
+            <li>提出使用 Weex 编写 Android 和 iOS 客户端部分页面，统一三端代码。使得页面编码效率有较大提升，并获得了不错的性能体验。</li>
+        </ul>
+
+        <p class='project-title'>
+            <span class='time'>2015-07 ~ 2015-12</span>
+            <span class='job'>前端工程师</span>
+            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+        </p>
+        <ul>
+            <li>提出前后端分离方案，使前端项目与后端项目解耦，让项目问题定位更准确，前端优化更为灵活。</li>
+            <li>采用 NodeJS 编写后台，使用 Koa / Express + Jade / Pug 等技术构建前端项目。页面逻辑采用 AMD 方式组织，使得模块更为清晰，项目更易于维护。</li>
+            <li>实施组件化(封装一段HTML，JS，CSS为一个组件)方案，将逻辑或布局复杂且相对的独立的组件进行封装，使得页面组织更为清晰，代码维护更为高效。</li>
+        </ul>
+
+        <p class='project-title'>
+            <span class='time'>2014-02 ~ 2015-06</span>
+            <span class='job'>Java工程师</span>
+            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+        </p>
+        <ul>
+            <li>提出采用 RESTful 风格的接口规范，使得调用接口的语义更明确。</li>
+            <li>公司基础技术服务的搭建，如：服务器的 CentOS 安装, SVN, FTP, Web Server ( Apache, Nginx, Tomcat ) 的搭建。完善了公司基础技术服务。</li>
+            <li>负责实现后台安全模块、后台支付模块。对接第三方支付，如支付宝支付，银联支付等，满足了当时公司的支付需求，使得公司快速实现现金流的运转。</li>
+            <li>使用 Servlet, JSP 等技术，负责土冒后台管理、土冒移动端页面、微信活动。满足了公司初期的后台管理需求，并及时快速地发布土冒移动版、微信优惠活动等。</li>
+        </ul>
+        <p>更多详情和校园项目经历，可查看<a href="/timeline.html">timeline</a>。公司细节或背调相关可查看：<a
+                href="https://github.com/zhoukekestar/zhoukekestar.github.io/blob/master/resume.md">简历细节说明</a>。</p>
+    </section>
+    <h2 class="title"><span>技能标签</span></h2>
+    <section class='skills'>
+    </section>
+    <script id="template-skills" type="x-tmpl-mustache">
+        {{#skills}}
+          <span class='hint--bottom' aria-label="{{label}}">
+            <div class="c100 p{{percent}} {{class}}">
+              <span>{{&name}}</span>
+              <div class="slice"><div class="bar"></div><div class="fill"></div></div>
+            </div>
+          </span>
+        {{/skills}}
+
+    </script>
+    <h2 class="title"><span>技能相关</span></h2>
+    <section class='skills'>
+        <ul>
+            <li>阅读过部分 Zepto, Vue, SeaJS, Koa 等源码。</li>
+            <li>使用过 Weex 进行混合开发，并有一定的混合开发经验。</li>
+            <li>在多环境下进行 Web 技术尝试，如：桌面 (Electron), 浏览器(Chrome Extension), Android (Weex), 跨终端工具 (NPM), 编辑器 (Atom)。</li>
+        </ul>
+    </section>
+    <h2 class="title"><span>获奖和证书</span></h2>
+    <section class='certificate'>
+        <ul>
+            <li>ACM浙江省赛二等奖，<a href="http://acm.tzc.edu.cn/acmhome/heroList.do?method=showTeamList&year=2013">查看详情</a>。
+            </li>
+            <li>大学英语4级 (CET-4), 习惯阅读英文技术文档，习惯使用Google。</li>
+            <li>浙江省高三组数学竞赛二等奖，<a href="https://zhoukekestar.github.io/assets/2011_math.html">查看详情</a>。</li>
+        </ul>
+    </section>
+    <h2 class="title"><span>自我评价和个人观点</span></h2>
+    <section class='opinion'>
+        <ul>
+            <li>太爱折腾，喜欢有挑战的任务。</li>
+            <li>自学能力不错，适应能力较强。喜欢应用适合、恰当的新技术解决当前的技术痛点。</li>
+            <li>团队沟通和协作能力相对较强。</li>
+            <li>喜爱并使用大量开源软件，认为文档和注释是项目使用的关键，项目测试是质量保证的关键。并努力向这两个关键靠拢。</li>
+            <li>个人技术观: <br/> 技术为应用而生。</li>
+            <li>
+                框架观点: <br/>
+                More HTML & CSS
+                <small class='hint--bottom' aria-label='Because they are as powerful as JS.'>?</small>
+                , Less Javascript. <br/>
+                As close as possible to standards.
+                <small class='hint--bottom' aria-label='W3C is the future!'>?</small>
+            </li>
+            <li>面试观点: <br/>
+                虽写过
+                <a href='http://zhoukekestar.github.io/notes/2017/06/07/interview-answers.html'>whiteboards 面试的答案</a>
+                ，但我不喜欢这类面试。
+                <a href="https://zhoukekestar.github.io/notes/2017/03/16/hiring-without-whiteboards.html">查看原因</a>。
+            </li>
+        </ul>
+    </section>
+</div>
+<footer>
+    2 C the future
+</footer>
+<script src='https://cdn.bootcss.com/mustache.js/2.3.0/mustache.min.js'></script>
+<script>
+    ;(function () {
+        var tmplUser = document.querySelector('#template-user-info');
+        var tmplSkills = document.querySelector('#template-skills');
+        var userInfo = document.querySelector('#user-info');
+        var skills = document.querySelector('.skills');
+
+        var name = '';
+        var age = '';
+        var sex = '';
+        var marjor = '';
+
+        name = (name = location.search.match(/name=([^&=]*)/)) && name[1] || '';
+        age = (age = location.search.match(/age=([^&=]*)/)) && age[1] || '';
+        sex = (sex = location.search.match(/sex=([^&=]*)/)) && sex[1] || '';
+        major = (major = location.search.match(/major=([^&=]*)/)) && major[1] || '';
+
+        // 访问简历是否包含个人信息
+        if (!name) {
+            document.querySelector('.attention.public').style.display = 'block';
+        } else {
+            document.querySelector('.attention.private').style.display = 'block';
+        }
+
+        userInfo.innerHTML = Mustache.render(tmplUser.innerHTML, {
+            name: decodeURIComponent(name),
+            age: decodeURIComponent(age),
+            sex: decodeURIComponent(sex),
+            major: decodeURIComponent(major),
+        });
+
+        skills.innerHTML = Mustache.render(tmplSkills.innerHTML, {
+            skills: [
+                {
+                    name: 'HTML',
+                    percent: 70,
+                    label: 'HTML 70'
+                },
+                {
+                    name: 'CSS',
+                    percent: 70,
+                    label: 'CSS 70'
+                },
+                {
+                    name: 'JS',
+                    percent: 60,
+                    label: 'Javascript 60'
+                },
+                {
+                    name: 'WebCom<br>ponent',
+                    percent: 50,
+                    label: 'WebComponents 50',
+                    class: 'small two-lines',
+                },
+                {
+                    name: 'Express<br>Koa',
+                    percent: 50,
+                    label: 'Express/Koa 50',
+                    class: 'small two-lines',
+                },
+                {
+                    name: 'Node',
+                    percent: 50,
+                    label: 'NodeJS 50'
+                },
+                {
+                    name: 'ES6',
+                    percent: 50,
+                    label: 'ES6 50'
+                },
+                {
+                    name: 'MVVM',
+                    percent: 45,
+                    label: 'MVVM 45',
+                    class: 'small'
+                },
+                {
+                    name: 'MongoDB',
+                    percent: 40,
+                    label: 'MongoDB 40',
+                    class: 'small'
+                },
+                {
+                    name: 'MySQL',
+                    percent: 30,
+                    label: 'MySQL 30',
+                    class: 'small'
+                },
+                {
+                    name: 'Redis',
+                    percent: 30,
+                    label: 'Redis 30'
+                },
+                {
+                    name: 'weex',
+                    percent: 25,
+                    label: 'weex 25'
+                },
+                {
+                    name: 'Electron',
+                    percent: 25,
+                    label: 'Electron 25',
+                    class: 'small'
+                },
+                {
+                    name: 'GraphQL',
+                    percent: 20,
+                    label: 'GraphQL 20',
+                    class: 'small'
+                },
+                {
+                    name: 'Micro<br>Services',
+                    percent: 20,
+                    label: 'Micro Service 20',
+                    class: 'small two-lines',
+                },
+                {
+                    name: 'Docker',
+                    percent: 20,
+                    label: 'Docker 20',
+                    class: 'small'
+                },
+                {
+                    name: 'Shell',
+                    percent: 15,
+                    label: 'Shell 15'
+                },
+                {
+                    name: 'Polymer',
+                    percent: 15,
+                    label: 'Polymer 15',
+                    class: 'small'
+                },
+                {
+                    name: 'Java',
+                    percent: 15,
+                    label: 'Java 15'
+                },
+                {
+                    name: 'JSP',
+                    percent: 10,
+                    label: 'JSP 10'
+                },
+                {
+                    name: 'Android',
+                    percent: 10,
+                    label: 'Android 10',
+                    class: 'small'
+                },
+                {
+                    name: 'MyBatis',
+                    percent: 10,
+                    label: 'MyBatis 10',
+                    class: 'small'
+                },
+                {
+                    name: 'C/C++',
+                    percent: 10,
+                    label: 'C/C++ 10'
+                },
+                {
+                    name: 'C#',
+                    percent: 10,
+                    label: 'C# 10'
+                },
+                {
+                    name: 'Groove',
+                    percent: 10,
+                    label: 'Groove 10',
+                    class: 'small'
+                },
+                {
+                    name: 'OpenGL',
+                    percent: 10,
+                    label: 'OpenGL 10',
+                    class: 'small'
+                },
+            ]
+        })
+    })();
+
+</script>
+
+<!-- GA -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-96916405-4', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
