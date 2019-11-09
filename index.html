@@ -20,7 +20,7 @@
     <!--<span class='print' onclick='print();'></span>
     <a href='./resume.pdf' class='pdf'></a>-->
 </header>
-<div class='line'><img src='image/resume-title-line.svg'></div>
+<div class='line'><img alt="" src='image/resume-title-line.svg'></div>
 <div class='resume'>
     <h2 class="title"><span>基本信息</span></h2>
     <section id='user-info'>
@@ -44,8 +44,8 @@
 
           {{^name}}
             <tr>
-              <td>姓名</td>
-              <td style='width: 218px;'>陈厚璋</td>
+              <td style="width:106px">姓名</td>
+              <td style='width: 175px;'>陈厚璋</td>
               <td style='width: 87px;'>民族&性别</td>
               <td>汉（子）</td>
             </tr>
@@ -55,6 +55,12 @@
             <td>四川大学</td>
             <td>学历</td>
             <td>本科</td>
+          </tr>
+          <tr>
+            <td>Java开发年限</td>
+            <td>三年</td>
+            <td>现居住</td>
+            <td>北京市海淀区</td>
           </tr>
           <tr>
             <td>籍贯</td>
@@ -69,51 +75,27 @@
             <td><a href="mailto:moon_chaser@163.com">moon_chaser@163.com</a></td>
           </tr>
         </table>
-
     </script>
+
+    <h2 class="title"><span>能力概述</span></h2>
+    <section class='certificate'>
+        <ul>
+            <li>Java基础扎实，掌握常用算法及数据结构，熟悉设计模式，熟悉JVM原理。</li>
+            <li>熟悉及熟练使用JavaWeb开发框架Spring,SpringBoot,MyBatis。</li>
+            <li>较深入理解、掌握Mysql、Redis。</li>
+            <li>熟练使用Linux，Shell及Python脚本开发</li>
+            <li>了解分布式开发，拥有部分理论基础及少量实践基础</li>
+            <li>其它杂项技能详见<a href="#skill-tags">“技能标签”</a></li>
+            <li>能简单进行前端开发工作</li>
+        </ul>
+    </section>
+
     <h2 class="title"><span><a href="timeline.html">工作经历</a></span></h2>
     <section class='projects'>
         <p class='project-title'>
-            <span class='time'>2017-09 ~ 至今 </span>
-            <span class='job'>资深前端开发工程师</span>
-            <span class='company'>阿里巴巴(中国)网络技术有限公司</span>
-        </p>
-        <ul>
-            <li>暂无</li>
-        </ul>
-        <p class='project-title'>
-            <span class='time'>2017-05 ~ 2017-08 </span>
-            <span class='job'>前端工程师</span>
-            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
-        </p>
-        <ul>
-            <li>负责制定 Web 前端框架标准。根据兼容性的不同，分别采用 Riot 和 CustomElement V0 搭建前端框架。</li>
-            <li>采用 Riot 组件化标准，使得原有项目迁移成本减至最低，并提高了项目可维护性。</li>
-        </ul>
-        <p class='project-title'>
-            <span class='time'>2017-01 ~ 2017-04 </span>
-            <span class='job'>前端工程师</span>
-            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
-        </p>
-        <ul>
-            <li>率先在运营后台接口采用 GraphQL + Koa + Sequelize 技术栈，实现用户权限与认证模块相关功能，使得前端接口调用更为灵活，接口对接效率大大提升。</li>
-        </ul>
-
-        <p class='project-title'>
-            <span class='time'>2016-01 ~ 2016-12</span>
-            <span class='job'>前端工程师</span>
-            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
-        </p>
-        <ul>
-            <li>提出采用 Micro Services 的业务架构，将独立并可通用的业务模块封装成微服务，使业务之间耦合度降低，提高了项目的可维护性。</li>
-            <li>提出采用 Git Push + Auto Build + Docker 的部署方案，先于后端在阿里云上进行 Docker 部署，使得运维工作大大简化，极大提高了部署效率。</li>
-            <li>提出使用 Weex 编写 Android 和 iOS 客户端部分页面，统一三端代码。使得页面编码效率有较大提升，并获得了不错的性能体验。</li>
-        </ul>
-
-        <p class='project-title'>
-            <span class='time'>2015-07 ~ 2015-12</span>
-            <span class='job'>前端工程师</span>
-            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+            <span class='time'>2018-09 ~ 今</span>
+            <span class='job'>Java工程师</span>
+            <span class='company' style="margin-right: 35px;">北京外研讯飞教育科技有限公司</span>
         </p>
         <ul>
             <li>提出前后端分离方案，使前端项目与后端项目解耦，让项目问题定位更准确，前端优化更为灵活。</li>
@@ -122,9 +104,9 @@
         </ul>
 
         <p class='project-title'>
-            <span class='time'>2014-02 ~ 2015-06</span>
+            <span class='time'>2017-06 ~ 2018-09</span>
             <span class='job'>Java工程师</span>
-            <span class='company'>浙江蓝麦电子商务股份有限公司</span>
+            <span class='company'>外研众成（北京）教育科技有限责任公司</span>
         </p>
         <ul>
             <li>提出采用 RESTful 风格的接口规范，使得调用接口的语义更明确。</li>
@@ -132,10 +114,22 @@
             <li>负责实现后台安全模块、后台支付模块。对接第三方支付，如支付宝支付，银联支付等，满足了当时公司的支付需求，使得公司快速实现现金流的运转。</li>
             <li>使用 Servlet, JSP 等技术，负责土冒后台管理、土冒移动端页面、微信活动。满足了公司初期的后台管理需求，并及时快速地发布土冒移动版、微信优惠活动等。</li>
         </ul>
-        <p>更多详情和校园项目经历，可查看<a href="/timeline.html">timeline</a>。公司细节或背调相关可查看：<a
-                href="https://github.com/zhoukekestar/zhoukekestar.github.io/blob/master/resume.md">简历细节说明</a>。</p>
+
+        <p class='project-title'>
+            <span class='time'>2016-09 ~ 2017-06</span>
+            <span class='job'>Java工程师</span>
+            <span class='company opinion'>北京中恒信达工程项目管理有限公司 <small class='hint--bottom' aria-label='后技术部独立为“北京亓天科技有限公司”'>?</small></span>
+        </p>
+        <ul>
+            <li>提出采用 RESTful 风格的接口规范，使得调用接口的语义更明确。</li>
+            <li>公司基础技术服务的搭建，如：服务器的 CentOS 安装, SVN, FTP, Web Server ( Apache, Nginx, Tomcat ) 的搭建。完善了公司基础技术服务。</li>
+            <li>负责实现后台安全模块、后台支付模块。对接第三方支付，如支付宝支付，银联支付等，满足了当时公司的支付需求，使得公司快速实现现金流的运转。</li>
+            <li>使用 Servlet, JSP 等技术，负责土冒后台管理、土冒移动端页面、微信活动。满足了公司初期的后台管理需求，并及时快速地发布土冒移动版、微信优惠活动等。</li>
+        </ul>
+        <p><b>更多详情，可查看<a href="./timeline.html">timeline</a>。</b></p>
     </section>
-    <h2 class="title"><span>技能标签</span></h2>
+
+    <h2 class="title"><span><a name= "skill-tags" href="http://blog.akira.ink">技能标签</a></span></h2>
     <section class='skills'>
     </section>
     <script id="template-skills" type="x-tmpl-mustache">
@@ -147,52 +141,24 @@
             </div>
           </span>
         {{/skills}}
-
     </script>
-    <h2 class="title"><span>技能相关</span></h2>
-    <section class='skills'>
-        <ul>
-            <li>阅读过部分 Zepto, Vue, SeaJS, Koa 等源码。</li>
-            <li>使用过 Weex 进行混合开发，并有一定的混合开发经验。</li>
-            <li>在多环境下进行 Web 技术尝试，如：桌面 (Electron), 浏览器(Chrome Extension), Android (Weex), 跨终端工具 (NPM), 编辑器 (Atom)。</li>
-        </ul>
-    </section>
-    <h2 class="title"><span>获奖和证书</span></h2>
-    <section class='certificate'>
-        <ul>
-            <li>ACM浙江省赛二等奖，<a href="http://acm.tzc.edu.cn/acmhome/heroList.do?method=showTeamList&year=2013">查看详情</a>。
-            </li>
-            <li>大学英语4级 (CET-4), 习惯阅读英文技术文档，习惯使用Google。</li>
-            <li>浙江省高三组数学竞赛二等奖，<a href="https://zhoukekestar.github.io/assets/2011_math.html">查看详情</a>。</li>
-        </ul>
-    </section>
+
     <h2 class="title"><span>自我评价和个人观点</span></h2>
     <section class='opinion'>
         <ul>
-            <li>太爱折腾，喜欢有挑战的任务。</li>
-            <li>自学能力不错，适应能力较强。喜欢应用适合、恰当的新技术解决当前的技术痛点。</li>
-            <li>团队沟通和协作能力相对较强。</li>
-            <li>喜爱并使用大量开源软件，认为文档和注释是项目使用的关键，项目测试是质量保证的关键。并努力向这两个关键靠拢。</li>
-            <li>个人技术观: <br/> 技术为应用而生。</li>
-            <li>
-                框架观点: <br/>
-                More HTML & CSS
-                <small class='hint--bottom' aria-label='Because they are as powerful as JS.'>?</small>
-                , Less Javascript. <br/>
-                As close as possible to standards.
-                <small class='hint--bottom' aria-label='W3C is the future!'>?</small>
-            </li>
-            <li>面试观点: <br/>
-                虽写过
-                <a href='http://zhoukekestar.github.io/notes/2017/06/07/interview-answers.html'>whiteboards 面试的答案</a>
-                ，但我不喜欢这类面试。
-                <a href="https://zhoukekestar.github.io/notes/2017/03/16/hiring-without-whiteboards.html">查看原因</a>。
-            </li>
+            <li>对编程有浓厚的兴趣，喜欢钻研新技术，擅长逻辑思维。</li>
+            <li>计算机基础略扎实，数学功底良好（竞赛水平），英文熟练并习惯阅读英文网站。</li>
+            <li>能够快速地适应各种工作环境，具有良好的分析能力，自学能力。</li>
+            <li>工作积极进取，擅长团队合作，有良好的沟通能力和团队协作能力。</li>
         </ul>
+    </section>
+    <h2 class="title"><span><a href="letter.html">To interviewer</a></span></h2>
+    <section class='opinion'>
+        <img src="image/envelope.png" style="width: 80px; cursor: pointer;margin-left: 48px;" onclick="window.open('letter.html')"/>
     </section>
 </div>
 <footer>
-    2 C the future
+    在线简历地址： http://resume.akira.ink
 </footer>
 <script src='https://cdn.bootcss.com/mustache.js/2.3.0/mustache.min.js'></script>
 <script>
@@ -254,124 +220,7 @@
                     percent: 50,
                     label: 'Express/Koa 50',
                     class: 'small two-lines',
-                },
-                {
-                    name: 'Node',
-                    percent: 50,
-                    label: 'NodeJS 50'
-                },
-                {
-                    name: 'ES6',
-                    percent: 50,
-                    label: 'ES6 50'
-                },
-                {
-                    name: 'MVVM',
-                    percent: 45,
-                    label: 'MVVM 45',
-                    class: 'small'
-                },
-                {
-                    name: 'MongoDB',
-                    percent: 40,
-                    label: 'MongoDB 40',
-                    class: 'small'
-                },
-                {
-                    name: 'MySQL',
-                    percent: 30,
-                    label: 'MySQL 30',
-                    class: 'small'
-                },
-                {
-                    name: 'Redis',
-                    percent: 30,
-                    label: 'Redis 30'
-                },
-                {
-                    name: 'weex',
-                    percent: 25,
-                    label: 'weex 25'
-                },
-                {
-                    name: 'Electron',
-                    percent: 25,
-                    label: 'Electron 25',
-                    class: 'small'
-                },
-                {
-                    name: 'GraphQL',
-                    percent: 20,
-                    label: 'GraphQL 20',
-                    class: 'small'
-                },
-                {
-                    name: 'Micro<br>Services',
-                    percent: 20,
-                    label: 'Micro Service 20',
-                    class: 'small two-lines',
-                },
-                {
-                    name: 'Docker',
-                    percent: 20,
-                    label: 'Docker 20',
-                    class: 'small'
-                },
-                {
-                    name: 'Shell',
-                    percent: 15,
-                    label: 'Shell 15'
-                },
-                {
-                    name: 'Polymer',
-                    percent: 15,
-                    label: 'Polymer 15',
-                    class: 'small'
-                },
-                {
-                    name: 'Java',
-                    percent: 15,
-                    label: 'Java 15'
-                },
-                {
-                    name: 'JSP',
-                    percent: 10,
-                    label: 'JSP 10'
-                },
-                {
-                    name: 'Android',
-                    percent: 10,
-                    label: 'Android 10',
-                    class: 'small'
-                },
-                {
-                    name: 'MyBatis',
-                    percent: 10,
-                    label: 'MyBatis 10',
-                    class: 'small'
-                },
-                {
-                    name: 'C/C++',
-                    percent: 10,
-                    label: 'C/C++ 10'
-                },
-                {
-                    name: 'C#',
-                    percent: 10,
-                    label: 'C# 10'
-                },
-                {
-                    name: 'Groove',
-                    percent: 10,
-                    label: 'Groove 10',
-                    class: 'small'
-                },
-                {
-                    name: 'OpenGL',
-                    percent: 10,
-                    label: 'OpenGL 10',
-                    class: 'small'
-                },
+                }
             ]
         })
     })();
