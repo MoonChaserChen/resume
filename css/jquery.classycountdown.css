@@ -11,7 +11,7 @@
 .ClassyCountdown-wrapper > div {
     display: inline-block;
     position: relative;
-    width: calc(16.66% - 20px);
+    width: calc(14.2% - 20px);
     margin: 10px;
 }
 
@@ -29,11 +29,10 @@
     cursor: pointer;
 }
 
-.ClassyCountdown-seconds .title {
+.ClassyCountdown-seconds .skillTitle {
     font-size: 0.5em;
 }
 
-.ClassyCountdown-seconds:hover .title {
-    font-size: 0.6em;
+.ClassyCountdown-seconds:hover .skillTitle {
     font-weight: bolder;
 }

@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/circle.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/hint.css/2.5.0/hint.base.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.classycountdown.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.throttle.js"></script>
+    <script src="js/jquery.classycountdown.js"></script>
+
+    <style>
+        .ClassyCountdownDemo { margin:0 auto 30px auto; width: calc(93%); padding:30px; display:block }
+    </style>
 </head>
 <body>
 <!--<div class='stop-watch'>
@@ -131,17 +141,8 @@
 
     <h2 class="title"><span><a name= "skill-tags" href="http://blog.akira.ink">技能标签</a></span></h2>
     <section class='skills'>
+        <div id="template-skills" class="ClassyCountdownDemo" style="height: 320px;"></div>
     </section>
-    <script id="template-skills" type="x-tmpl-mustache">
-        {{#skills}}
-          <span class='hint--bottom' aria-label="{{label}}">
-            <div class="c100 p{{percent}} {{class}}">
-              <span>{{&name}}</span>
-              <div class="slice"><div class="bar"></div><div class="fill"></div></div>
-            </div>
-          </span>
-        {{/skills}}
-    </script>
 
     <h2 class="title"><span>自我评价和个人观点</span></h2>
     <section class='opinion'>
@@ -192,7 +193,7 @@
             major: decodeURIComponent(major),
         });
 
-        skills.innerHTML = Mustache.render(tmplSkills.innerHTML, {
+        /*skills.innerHTML = Mustache.render(tmplSkills.innerHTML, {
             skills: [
                 {
                     name: 'HTML',
@@ -222,7 +223,7 @@
                     class: 'small two-lines',
                 }
             ]
-        })
+        })*/
     })();
 
 </script>
@@ -243,6 +244,36 @@
 
     ga('create', 'UA-96916405-4', 'auto');
     ga('send', 'pageview');
+
+    $(document).ready(function() {
+        var list = [
+            {"title": "Java", "value": 80},
+            {"title": "Mysql", "value": 76},
+            {"title": "Redis", "value": 70},
+            {"title": "CAS", "value": 67},
+            {"title": "Spring Web", "value": 65},
+            {"title": "Spring Boot", "value": 65},
+            {"title": "Mybatis", "value": 60},
+            {"title": "DevTools", "value": 50},
+            {"title": "Python", "value": 50},
+            {"title": "Algorithm", "value": 40},
+            {"title": "ElasticSearch", "value": 40},
+            {"title": "ELK", "value": 40},
+            {"title": "RabbitMQ", "value": 40},
+            {"title": "Dubbo", "value": 40},
+            {"title": "Linux", "value": 30},
+            {"title": "MongoDB", "value": 23},
+            {"title": "Flume", "value": 23},
+            {"title": "Hystrix", "value": 20},
+            {"title": "Hadoop", "value": 17},
+            {"title": "kafka", "value": 17},
+            {"title": "Scala", "value": 16},
+            {"title": "Gradle", "value": 16},
+            {"title": "Others", "value": 15}
+        ];
+
+        $('#template-skills').generateList(list);
+    });
 </script>
 </body>
 </html>

@@ -27,7 +27,7 @@
             element.append('<div class="ClassyCountdown-wrapper">' +
                             '<div class="ClassyCountdown-seconds">' +
                                 '<input type="text" />' +
-                                '<span class="ClassyCountdown-value"><span class="title"></span></span>' +
+                                '<span class="ClassyCountdown-value"><span class="skillTitle"></span></span>' +
                             '</div>' +
                         '</div>');
             element.find('.ClassyCountdown-seconds input').knob($.extend({
@@ -589,7 +589,7 @@
 
     function getValueByTitle(titleValueList, tit) {
         var result;
-        list.forEach(function(v) {
+        titleValueList.forEach(function(v) {
             if (v.title == tit) {
                 result = v.value;
             }
@@ -613,7 +613,7 @@
     function ani(titleValueList) {
         $(".ClassyCountdown-seconds").mouseenter(function(){
             var $el = $(this);
-            var original_val = getValueByTitle(titleValueList, $el.find(".title").html());
+            var original_val = getValueByTitle(titleValueList, $el.find(".skillTitle").html());
             var current_val = $(this).find("input").val();
             if (current_val != original_val) {
                 return;
@@ -630,32 +630,3 @@
     }
 })(jQuery);
 
-$(document).ready(function() {
-    list = [
-        {"title": "Java", "value": 80},
-        {"title": "Mysql", "value": 76},
-        {"title": "Redis", "value": 70},
-        {"title": "CAS", "value": 67},
-        {"title": "Spring Web", "value": 65},
-        {"title": "Spring Boot", "value": 65},
-        {"title": "Mybatis", "value": 60},
-        {"title": "DevTools", "value": 50},
-        {"title": "Python", "value": 50},
-        {"title": "Algorithm", "value": 40},
-        {"title": "ElasticSearch", "value": 40},
-        {"title": "ELK", "value": 40},
-        {"title": "RabbitMQ", "value": 40},
-        {"title": "Dubbo", "value": 40},
-        {"title": "Linux", "value": 30},
-        {"title": "MongoDB", "value": 23},
-        {"title": "Flume", "value": 23},
-        {"title": "Hystrix", "value": 20},
-        {"title": "Hadoop", "value": 17},
-        {"title": "kafka", "value": 17},
-        {"title": "Scala", "value": 16},
-        {"title": "Gradle", "value": 16},
-        {"title": "Others", "value": 15}
-    ];
-
-    $('#countdown18').generateList(list);
-});
