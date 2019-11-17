@@ -48,7 +48,7 @@
             }
             if (options.blogPage) {
                 element.find(".ClassyCountdown-seconds").click(function () {
-                    window.location.href = options.blogPage;
+                    window.open(options.blogPage);
                 });
             }
         }
