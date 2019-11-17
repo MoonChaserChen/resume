@@ -46,6 +46,11 @@
                 element.find(".ClassyCountdown-seconds .ClassyCountdown-value > span").last().html(options.title);
                 // element.find(".ClassyCountdown-value > span").attr("style", settings.labelsOptions.style);
             }
+            if (options.blogPage) {
+                element.find(".ClassyCountdown-seconds").click(function () {
+                    window.location.href = options.blogPage;
+                });
+            }
         }
 
         function doTick() {
@@ -579,10 +584,7 @@
     $.fn.generateList = function(titleValueList) {
         var div = $(this);
         titleValueList.forEach(function (element) {
-            div.ClassyCountdown({
-                title: element.title,
-                value: element.value
-            });
+            div.ClassyCountdown(element);
         });
         ani(titleValueList);
     }
