@@ -592,7 +592,7 @@
     function getValueByTitle(titleValueList, tit) {
         var result = "";
         titleValueList.forEach(function(v) {
-            if (v.title === tit) {
+            if (v.title == tit) {
                 result = v.value;
             }
         });
@@ -617,14 +617,14 @@
             var $el = $(this);
             var original_val = getValueByTitle(titleValueList, $el.find(".skillTitle").html());
             var current_val = $(this).find("input").val();
-            if (current_val !== original_val) {
+            if (current_val != original_val) {
                 return;
             }
             var value_arr = sliceValue(original_val);
             var id = setInterval(function(){
                 var slice_value = value_arr.shift();
                 $el.find("input").val(slice_value).trigger('change');
-                if (value_arr.length === 0) {
+                if (value_arr.length == 0) {
                     clearInterval(id);
                 }
             }, slice_time);
