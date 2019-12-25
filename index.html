@@ -258,25 +258,27 @@
             {"title": "Spring Web", "value": 65},
             {"title": "Spring Boot", "value": 65},
             {"title": "Mybatis", "value": 60},
-            {"title": "DevTools", "value": 50},
             {"title": "Python", "value": 50},
             {"title": "Algorithm", "value": 40},
             {"title": "ElasticSearch", "value": 40},
             {"title": "ELK", "value": 40},
-            {"title": "RabbitMQ", "value": 40},
-            {"title": "Dubbo", "value": 40},
-            {"title": "Linux", "value": 30},
+            {"title": "Linux", "value": 35},
+            {"title": "Dubbo", "value": 30}
+        ];
+
+        var moreList = [
+            {"title": "DevTools", "value": 50},
+            {"title": "RabbitMQ", "value": 25},
             {"title": "MongoDB", "value": 23},
             {"title": "Flume", "value": 23},
             {"title": "Hystrix", "value": 20},
             {"title": "Hadoop", "value": 17},
             {"title": "kafka", "value": 17},
             {"title": "Scala", "value": 16},
-            {"title": "Gradle", "value": 16},
-            {"title": "Others", "value": 15}
+            {"title": "Gradle", "value": 16}
         ];
 
-        $('#template-skills').generateList(list);
+        $('#template-skills').generateList(list, moreList);
     });
 </script>
 </body>
