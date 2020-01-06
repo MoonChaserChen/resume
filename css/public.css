@@ -247,7 +247,7 @@ header .pdf:before {
 }
 .projects ul li {
     margin-bottom: 10px;
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 15px;
 }
 /* 证书和个人观点文字样式 */
