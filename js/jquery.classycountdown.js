@@ -586,7 +586,14 @@
         titleValueList.forEach(function (element) {
             div.ClassyCountdown(element);
         });
+        var lines = Math.ceil(titleValueList.length / 7);
+        setHigh(div, lines);
         ani(titleValueList);
+    };
+
+    function setHigh(_div, lines) {
+        var line_height = 85;
+        _div.height(line_height * lines);
     }
 
     function getValueByTitle(titleValueList, tit) {
