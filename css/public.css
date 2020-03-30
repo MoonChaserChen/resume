@@ -296,3 +296,7 @@ footer {
 footer a {
     color: inherit;
 }
+
+.bold {
+    font-weight: bold;
+}
