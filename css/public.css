@@ -173,16 +173,6 @@ header .pdf:before {
 }
 .resume a {
     color: inherit;
-    margin: 0 6px;
-}
-.resume a:before {
-    content: '';
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACw0lEQVRYR61X3W3bMBDmSaDgR2/QdIK6E9SZoM4EcSeoH23SQFXAovyWZIIkE9SZIMkEcSZoRnDfDAvWFSeIhkyJ+tejSPH77jvedydgPT+LxWICANcAMKGjEfEDADac89++7+9MOOgL3/f94eFwuNfABefuAOBqtVq9ZNd6IZCCPwPAqCogRPyhlHrQ+zoTaAKuQbMkOhEoAX9HxGkcxzvXdW8ZY99zuQe4pHR0IiCEoJxPjcPfOefj7IWTUpLk18a+Hef8c2sCQogRALxVgev1IhKIeNeFwC0A/MwQyEVuyi6l3GTTkZRo1a21rQshXgDgW7peCU77ilRrTSATzQl8Pp9fAMCnMAxfi4iTSTmO86cXH5BSzhhjU33hhBBTALhhjA0RcauU+poFslTMU2sFKNrBYLCj256C359FlpYZvbOVaxzHV60JaLAicET8F8fxaL1ef5R4xVMQBJNOBIrA0waU2G2ZUenUWQksl8sxIpKDaX/fHo/HO4oqvdGU8zPZm4LT/hyBlPVNmcP1EXlhM6ojWQfwR875zJwJTgr0AU5RUXW4rkvDCKVwyBij/r9RSm2LvCEhkDrUM9WwzdurIm/rqFAnctoTRdFfk6A5XLQhAUIIHwB+lXW1Ig/X4ERuv98PdXU0JUEE3oxRqrCxaO8nk2GMzbJ1zhh7VUqRNTd+QEqJ2a/IHsMwpLaZe0gJz/PI3ciCaQhN5kBEJALjxujkAyYByHi47UDz3nQlQOXxRYNRJ/M877Johrc1FppsWqfA0kwKSdgqpo5qNjUTH5BSnqmQevoZiZJyfQyCwBxMa1+HhEBa5+RYp1RoEog4cxyHhgwqV/PHo9YoVsbmzIqjKMqRKPm4M3iuG9qUMEmQF3ied2G7qLX1t7XjCiWSvx5bc2kCnlMg+zFVBw2d2dGbMfbAOadJJ/eb3RRY7/8PiaoO1oFbzGMAAAAASUVORK5CYII=);
-    height: .7em;
-    width: .7em;
-    background-size: contain;
-    display: inline-block;
-    margin-right: 5px;
 }
 /* 技能百分比样式 */
 .resume .skills > span {
