@@ -36,29 +36,12 @@
     </section>
     <script id="template-user-info" type="x-tmpl-mustache">
         <table>
-          {{#name}}
-            <tr>
-              <td class="bold">名字</td>
-              <td style='width: 230px;'>{{name}}</td>
-              <td class="bold">性别</td>
-              <td>{{sex}}</td>
-            </tr>
-            <tr>
-              <td class="bold">出生年月</td>
-              <td>{{age}}</td>
-              <td class="bold">专业</td>
-              <td>{{major}}</td>
-            </tr>
-          {{/name}}
-
-          {{^name}}
-            <tr>
-              <td style="width: 126px">姓名</td>
-              <td style='width: 175px;'>陈厚璋</td>
-              <td style='width: 87px;'>性别</td>
-              <td>男</td>
-            </tr>
-          {{/name}}
+          <tr>
+            <td style="width: 100px" class="bold">姓名</td>
+            <td style='width: 258px;'>陈厚璋</td>
+            <td style='width: 87px;' class="bold">性别</td>
+            <td>男</td>
+          </tr>
           <tr>
             <td class="bold">毕业院校</td>
             <td>四川大学</td>
