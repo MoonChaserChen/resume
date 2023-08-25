@@ -47,7 +47,7 @@
                 // element.find(".ClassyCountdown-value > span").attr("style", settings.labelsOptions.style);
             }
             if (options.blogPage) {
-                element.find(".ClassyCountdown-seconds").click(function () {
+                element.find(".ClassyCountdown-seconds").last().click(function () {
                     window.open(options.blogPage);
                 });
             }
