@@ -172,7 +172,8 @@ header .pdf:before {
     z-index: 2;
 }
 .resume a {
-    color: inherit;
+    color: blue;
+    text-decoration:none;
 }
 /* 技能百分比样式 */
 .resume .skills > span {
