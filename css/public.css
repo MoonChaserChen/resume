@@ -175,6 +175,10 @@ header .pdf:before {
     color: blue;
     text-decoration:none;
 }
+.resume span a {
+    color: white;
+    text-decoration:none;
+}
 /* 技能百分比样式 */
 .resume .skills > span {
     margin: 5px;
