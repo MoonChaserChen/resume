@@ -260,6 +260,8 @@
         }
         i.icon-ali {
             background-image: url(image/icon-work-ali.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
         i.icon-mt {
             background-image: url(image/icon-work-mt.png);
@@ -330,8 +332,8 @@
             <article>
                 <h2>
                     <i class='iconfont icon-java'></i>
-                    <i class='icon-ali hint--bottom' aria-label='阿里巴巴（2020-05 ~ 2020-12）'></i>
-                    阿里巴巴-待更新
+                    <i class='icon-ali hint--bottom' aria-label='阿里巴巴（2020-11 ~ 2021-01）'></i>
+                    阿里巴巴-品质中台
                 </h2>
                 <h4 class='tags'>
                     <span>Java</span>
@@ -342,14 +344,141 @@
                     <span>HSF</span>
                 </h4>
                 <ul>
-                    <li>待更新</li>
+                    <li>平台商品抽检</li>
                 </ul>
                 <div class="detail">
-                    <p>待更新</p>
+                    <p>背景：天猫&盒马共同诉求，对其平台商品进行质量检测。</p>
+                    <p>目标：对有需求的入驻商家商品进行抽检，对抽检结果进行归一化及表达，包括正向表达和逆向表达，例如：天猫商品如果抽检合格进行平台打标“天猫甄检”并展示；盒马商品抽检不合格可从平台上移除展示并进行通知(食品风险接入食安中台外部风险预警MQ)</p>
+                    <p>
+                        方案：使用状态机+MQ驱动整个抽检流程；对接外部三方检测机构；将抽检结果归一化成合格与不合格；结果表达方式灵活多样化；天猫商品采用虚拟旺旺下单，商家无感知；
+                    </p>
                 </div>
             </article>
         </div>
-        <span class='month'>11</span>
+        <span class='month'>09</span>
+    </li>
+    <li>
+        <div class="right">
+            <article>
+                <h2>
+                    <i class='iconfont icon-java'></i>
+                    <i class='icon-ali hint--bottom' aria-label='阿里巴巴（2020-10 ~ 2020-12）'></i>
+                    阿里巴巴-食安中台
+                </h2>
+                <h4 class='tags'>
+                    <span>Java</span>
+                    <span>TDDL + IDB</span>
+                    <span>D2</span>
+                    <span>Pandora</span>
+                    <span>MetaQ</span>
+                    <span>HSF</span>
+                </h4>
+                <ul>
+                    <li>食品标签审核：二期（知识图谱）</li>
+                </ul>
+                <div class="detail">
+                    <p>背景：食品标签审核-二期提供了通过代码检测标签违规情况，较为死板，且随着对国标理解的加深，需要不断对其进行调整。</p>
+                    <p>目标：由算法侧对标签审核进行匹配&自动优化。</p>
+                    <p>
+                        方案：算法侧通过构建知识图谱，并对其行检测，同时将检测结果通过数仓通知到食安。食安侧增加一个通用MQ接收外部明确风险预警，并将之前“接入阿里健康”时合规侧的RPC预警通知转发到此通用MQ上（统一流程）。
+                    </p>
+                </div>
+            </article>
+        </div>
+        <span class='month'>09</span>
+    </li>
+    <li>
+        <div class="right">
+            <article>
+                <h2>
+                    <i class='iconfont icon-java'></i>
+                    <i class='icon-ali hint--bottom' aria-label='阿里巴巴（2020-09 ~ 2020-10）'></i>
+                    阿里巴巴-食安中台
+                </h2>
+                <h4 class='tags'>
+                    <span>Java</span>
+                    <span>TDDL + IDB</span>
+                    <span>D2</span>
+                    <span>Pandora</span>
+                    <span>MetaQ</span>
+                    <span>HSF</span>
+                </h4>
+                <ul>
+                    <li>食品标签审核：一期</li>
+                </ul>
+                <div class="detail">
+                    <p>背景：盒马烘焙类食品为预包装类（标签是自行临时打印上去的），因此其标签及标签上的成分表存在着合规性。由于政府抽查，也存在着罚款的情况。</p>
+                    <p>目标：分析食品预包装上标签，筛选出其不符合国标规定的部分，并进行预警，供盒马运营人员确认。</p>
+                    <p>
+                        方案：盒马侧将食品包装数据通过图象&文字识别进行采集，并通过数仓同步到食安中台。食安侧将三类国标【食品营养强化剂使用标准（GB14880-2012）、预包装食品标签通则（GB7718-2011）、食品添加剂使用标准（GB2760-2011）】抽象成检测代码(组合/责任链模式，方便扩展)。
+                    </p>
+                </div>
+            </article>
+        </div>
+        <span class='month'>09</span>
+    </li>
+    <li>
+        <div class="right">
+            <article>
+                <h2>
+                    <i class='iconfont icon-java'></i>
+                    <i class='icon-ali hint--bottom' aria-label='阿里巴巴（2020-07 ~ 2020-08）'></i>
+                    阿里巴巴-食安中台
+                </h2>
+                <h4 class='tags'>
+                    <span>Java</span>
+                    <span>TDDL + IDB</span>
+                    <span>D2</span>
+                    <span>Pandora</span>
+                    <span>MetaQ</span>
+                    <span>HSF</span>
+                </h4>
+                <ul>
+                    <li>引入业务方：阿里健康</li>
+                </ul>
+                <div class="detail">
+                    <p>背景：阿里健康目前运营人员上的痛点在于药品、器具的合规性。不同的药品/器械类目需要不同的资质，但由于历史原因，资质数据不完善（过期/丢失），因而发生过多次因政府抽检而遭受罚款。</p>
+                    <p>目标：阿里健康接入食安中台，并为其提供风险预警能力（食安中台的目标也从食品扩展到了药品）。</p>
+                    <p>
+                        方案：首先食安中台需引入资质合规校验能力。但由于CRO技术部已有合规部门，因此这部分需要与合规部门协作；预警类型可复用原系统内“过期”类型，同时为系统增加“待过期”类型（此类型额外拥有1个天数字段）
+                    </p>
+                </div>
+            </article>
+        </div>
+        <span class='month'>07</span>
+    </li>
+    <li>
+        <div class="right">
+            <article>
+                <h2>
+                    <i class='iconfont icon-java'></i>
+                    <i class='icon-ali hint--bottom' aria-label='阿里巴巴（2020-05 ~ 2020-06）'></i>
+                    阿里巴巴-食安中台
+                </h2>
+                <h4 class='tags'>
+                    <span>Java</span>
+                    <span>TDDL + IDB</span>
+                    <span>D2</span>
+                    <span>Pandora</span>
+                    <span>MetaQ</span>
+                    <span>HSF</span>
+                </h4>
+                <ul>
+                    <li>重构：引入业务身份bizType</li>
+                </ul>
+                <div class="detail">
+                    <p>背景：食安中台全称为“食品安全中台”，目标在于为阿里创新业务提供食品安全检测、预警功能。目前的业务方有：天猫超市、盒马、大润发、三江、淘鲜达。为了抽象出公共的食安能力，每个业务方在食安中台称为“租户Tenant”（这个概念在CRO技术部也比较通用）。但随着食安中台承接的业务增多，发现仅使用租户这一概念不足以覆盖集团多样的业务形态，不同的业务形态有着不同的“食安”诉求。例如淘鲜达下又有半日达，次日达，其履约时效性及预警感知均有所不同。</p>
+                    <p>目标：因此在租户下又衍生出新的概念“业务身份bizType”。同时需要将以前的食安检测、预警功能下放到bizType，而Tenant仅作为业务方的标识，起着数据隔离的作用。</p>
+                    <p>
+                        方案：梳理业务逻辑及代码，找出与Tenant相绑定的功能，将其逻辑承载到bizType上。同时若Tenant下没有额外的bizType，为其创建默认的一个bizType。
+                    </p>
+                </div>
+            </article>
+        </div>
+        <span class='month'>05</span>
+    </li>
+    <li>
+        <span class='year'>2020</span>
     </li>
     <li>
         <div class="left">
