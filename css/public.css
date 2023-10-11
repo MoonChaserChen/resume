@@ -305,3 +305,7 @@ footer a {
 .bold {
     font-weight: bold;
 }
+
+.domain {
+    color: #c21111;
+}
